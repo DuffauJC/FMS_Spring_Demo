@@ -1,5 +1,7 @@
 package fr.fms;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.boot.CommandLineRunner;
@@ -27,6 +29,8 @@ public class FmsSpringDemoApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
+		// exo 1.1
+
 //		Category tablet = categoryRepository.save(new Category("Tablet"));
 //		Category laptop = categoryRepository.save(new Category("Laptop"));
 //		Category smartphone = categoryRepository.save(new Category("Smartphone"));
@@ -37,26 +41,72 @@ public class FmsSpringDemoApplication implements CommandLineRunner {
 //		 articleRepository.save(new Article("R510","Asus",6000,laptop));
 //		 articleRepository.save(new Article("Corsair II","Corsair",2350,laptop));
 
-		/*
-		 * for (Article article : articleRepository.findByBrand("Samsung")) {
-		 * System.out.println(article);
-		 * 
-		 * } for (Article article : articleRepository.findByBrandContains("Samsung")) {
-		 * System.out.println(article);
-		 * 
-		 * } for (Article article :
-		 * articleRepository.findByBrandAndPrice("Samsung",250)) {
-		 * System.out.println(article);
-		 * 
-		 * }
-		 */
+//		  for (Article article : articleRepository.findByBrand("Samsung")) {
+//		  System.out.println(article);
+//		  
+//		  } 
+//		  for (Article article : articleRepository.findByBrandContains("Samsung")) {
+//		  System.out.println(article);
+//		  
+//		  } 
+//		  for (Article article :
+//		  articleRepository.findByBrandAndPrice("Samsung",250)) {
+//		  System.out.println(article);
+//		  
+//		  }
 
-		  for (Article article :
-		  articleRepository.findByCategoryId((long)2)) {
-		  System.out.println(article);
-		  
-		  }
+//		for (Article article : articleRepository.findByBrandAndPriceGreaterThan("Samsung", 300)) {
+//			System.out.println(article);
+//		}
 
+//		  for (Article article :
+//			  articleRepository.searchArticles("sung", 200)) {
+//			  System.out.println(article);
+//			  
+//			  }
+
+//		  for (Article article :
+//		  articleRepository.findByCategoryId((long)2)) {
+//		  System.out.println(article);
+//		  
+//		  }
+
+		// exo 1.2
+
+		// System.out.println( articleRepository.findById((long)2));
+		// System.out.println( articleRepository.findByDescription("Corsair"));
+
+		// exo 1.3
+
+//		  for (Article article :
+//		  articleRepository.findByDescriptionAndBrand("Xiaomi","MI10")) {
+//		  System.out.println(article);
+//		  
+//		  }
+
+		// exo 1.4
+		// articleRepository.deleteById((long)5);
+
+		// exo 1.5
+//		Article article = articleRepository.getArticleById((long) 2);
+//
+//		article.setBrand("Ipoud");
+//		article.setDescription("Apple il le poud !!");
+//		article.setPrice(4850);
+//
+//		System.out.println(article);
+//
+//		articleRepository.update(article, article.getId());
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
