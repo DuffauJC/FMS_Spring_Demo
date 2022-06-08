@@ -8,6 +8,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import fr.fms.entities.Article;
+import fr.fms.entities.Category;
 
 public interface ArticleRepository extends JpaRepository<Article, Long> {
 
@@ -56,9 +57,11 @@ public interface ArticleRepository extends JpaRepository<Article, Long> {
 	// exo 1.6 Ajouter des moyens pour afficher les noms des catégories classés par ordre 
 	//croissant puis décroissant
 	
+	@Query("select name from Category order by name asc")
+	public List<Category> showCategoryAsc();
 	
-	
-	
+	@Query("select name from Category order by name desc")
+	public List<Category> showCategoryDesc();
 	
 	
 }

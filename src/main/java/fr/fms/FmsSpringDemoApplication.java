@@ -84,9 +84,12 @@ public class FmsSpringDemoApplication implements CommandLineRunner {
 //		  
 //		  }
 
+		
 		// exo 1.4
 		// articleRepository.deleteById((long)5);
 
+		
+		
 		// exo 1.5
 //		Article article = articleRepository.getArticleById((long) 2);
 //
@@ -100,13 +103,15 @@ public class FmsSpringDemoApplication implements CommandLineRunner {
 
 		
 		
-		
-		
-		
-		
-		
-		
-		
+		// exo 1.6
+
+//		for (Category cat : articleRepository.showCategoryAsc()) {
+//			System.out.println(cat);
+//		}
+//		for (Category cat : articleRepository.showCategoryDesc()) {
+//			System.out.println(cat);
+//		}
+
 	}
 
 }
