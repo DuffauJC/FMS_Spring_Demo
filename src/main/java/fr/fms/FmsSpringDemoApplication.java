@@ -105,12 +105,18 @@ public class FmsSpringDemoApplication implements CommandLineRunner {
 		
 		// exo 1.6
 
-//		for (Category cat : articleRepository.showCategoryAsc()) {
+//		for (Category cat : categoryRepository.showCategoryAsc()) {
 //			System.out.println(cat);
 //		}
-//		for (Category cat : articleRepository.showCategoryDesc()) {
+//		for (Category cat : categoryRepository.findAllByOrderByNameAsc()) {		
+//			System.out.println(cat);
+//}
+//		for (Category cat : categoryRepository.showCategoryDesc()) {
 //			System.out.println(cat);
 //		}
+//		for (Category cat : categoryRepository.findAllByOrderByNameDesc()) {		
+//			System.out.println(cat);
+//}
 
 	}
 
